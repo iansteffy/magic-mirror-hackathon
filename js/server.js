@@ -66,7 +66,7 @@ function Server (config) {
 						return next();
 					}
 					Log.log(err.message);
-					res.status(403).send("This device is not allowed to access your mirror. <br> Please check your config.js or config.js.sample to change this.");
+					res.status(403).send("This device is not allowed to access your mirror. <br> Please check your config.js or config.js.template to change this.");
 				});
 			});
 

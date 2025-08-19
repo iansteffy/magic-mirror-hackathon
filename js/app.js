@@ -1,5 +1,6 @@
 // Alias modules mentioned in package.js under _moduleAliases.
 require("module-alias/register");
+require("dotenv").config();
 
 const fs = require("node:fs");
 const path = require("node:path");
