@@ -42,6 +42,15 @@ let config = {
 			module: "alert",
 		},
 		{
+			module: "MMPowerScheduler",
+			config: {
+				schedule: [
+					{ action: "off", time: "16:30" },
+        			{ action: "on", time: "09:00" }
+				]
+			}
+		},
+		{
 			module: "clock",
 			position: "top_left"
 		},
@@ -62,8 +71,8 @@ let config = {
 			config: {
 				weatherProvider: "openmeteo",
 				type: "forecast",
-				lat: 40.776676,
-				lon: -73.971321 //test
+				lat: 48.3658,
+				lon: 10.8865
 			}
 		},
 	]
