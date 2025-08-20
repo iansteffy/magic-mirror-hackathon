@@ -1,0 +1,49 @@
+.abuseipdb {
+  width: 100%;
+  text-align: left;
+}
+
+.abuseipdb-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.abuseipdb-item {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.abuseipdb-item .icon {
+  color: #f44;
+}
+
+.abuseipdb-item .org {
+  font-weight: bold;
+  min-width: 150px; /* Ensure consistent spacing */
+}
+
+.abuseipdb-item .score {
+  font-weight: bold;
+  color: #fff; /* Default color */
+}
+
+/* Make the selectors more specific to ensure they take precedence */
+.abuseipdb-item .score.low-risk {
+  color: #0f0 !important; /* Bright green */
+}
+
+.abuseipdb-item .score.medium-risk {
+  color: #ff0 !important; /* Bright yellow */
+}
+
+.abuseipdb-item .score.high-risk {
+  color: #f00 !important; /* Bright red */
+}
+
+.abuseipdb-item .meta {
+  color: #666;
+  font-size: 0.8em;
+}
