@@ -75,6 +75,11 @@ let config = {
 				lon: 10.8865
 			}
 		},
+		{
+			module: "MMM-HolidayCountdown",
+			header: "Upcoming Public Holidays",
+			position: "bottom_left",
+		}
 	]
 };
 
